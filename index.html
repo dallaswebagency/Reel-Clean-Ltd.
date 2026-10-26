@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reel Clean Ltd. | Cleaning and Restoration in Calgary, Alberta</title>
+<meta name="description" content="Reel Clean is Calgary's 24/7 specialty cleaning and restoration company: film production cleaning, house and commercial cleaning, restoration, carpet and floor care. IICRC certified and BBB accredited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D0D0E;
+  --coal:#18191B;
+  --cream:#F3EEE4;
+  --paper:#FAF7F1;
+  --silver:#BFC3C9;
+  --silver-d:#8E939B;
+  --red:#C8161D;
+  --red-d:#9E1117;
+  --line:rgba(13,13,14,.16);
+  --cond:'Barlow Condensed','Arial Narrow',sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
+  --perf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='24'%3E%3Crect x='11' y='5' width='16' height='14' rx='3.5' fill='%23F3EEE4'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.cond{font-family:var(--cond);text-transform:uppercase;letter-spacing:.02em}
+.label{font-family:var(--cond);font-weight:700;font-size:.86rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.btn{display:inline-block;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:1.05rem;padding:15px 28px;transition:.2s;border-radius:2px}
+.btn.red{background:var(--red);color:#fff}
+.btn.red:hover{background:var(--red-d)}
+.btn.line{border:2px solid var(--cream);color:var(--cream)}
+.btn.line:hover{background:var(--cream);color:var(--ink)}
+.btn.dark{background:var(--ink);color:var(--cream)}
+.btn.dark:hover{background:var(--red)}
+
+/* TOP BAR + HEADER */
+.bar{background:var(--ink);color:var(--silver);font-family:var(--cond);text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;font-weight:600}
+.bar .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0}
+.bar b{color:#fff}
+header.top{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--ink)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:18px}
+.brand img{height:62px;width:auto;mix-blend-mode:multiply}
+nav.main ul{display:flex;gap:26px;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.95rem}
+nav.main a{padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--red)}
+.burger{display:none;width:46px;height:46px;border:2px solid var(--ink);flex-direction:column;gap:5px;align-items:center;justify-content:center}
+.burger span{width:20px;height:2px;background:var(--ink)}
+
+/* HERO */
+.perf{height:24px;background:var(--ink) var(--perf) repeat-x 0 0}
+.hero{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:70px 0 84px}
+.hero h1{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(3.2rem,7.4vw,6.6rem);line-height:.9;letter-spacing:-.005em;margin-top:18px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p.lead{margin-top:26px;max-width:540px;font-size:1.12rem;color:#D8D3C8}
+.hero .acts{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.hero .label{color:var(--silver)}
+
+/* SLATE */
+.slate{position:relative;max-width:470px;margin-left:auto;width:100%}
+.slate .arm{height:56px;background:repeating-linear-gradient(115deg,#F3EEE4 0 34px,#0D0D0E 34px 68px);border:3px solid var(--cream);transform-origin:0 100%;transform:rotate(-7deg);margin-bottom:-3px;position:relative;z-index:2;animation:clap 5s ease-in-out infinite}
+@keyframes clap{0%,70%,100%{transform:rotate(-7deg)}78%{transform:rotate(0)}86%{transform:rotate(-7deg)}}
+.slate .body{background:#141415;border:3px solid var(--cream);position:relative;z-index:1}
+.slate .stripe{height:40px;background:repeating-linear-gradient(115deg,#F3EEE4 0 34px,#0D0D0E 34px 68px);border-bottom:3px solid var(--cream)}
+.slate dl{display:grid;grid-template-columns:1fr 1fr}
+.slate dl div{padding:14px 18px 16px;border-bottom:2px solid rgba(243,238,228,.6)}
+.slate dl div:nth-child(odd){border-right:2px solid rgba(243,238,228,.6)}
+.slate dl div.full{grid-column:1/-1;border-right:0}
+.slate dt{font-family:var(--cond);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--silver)}
+.slate dd{font-family:var(--cond);font-weight:700;font-size:1.55rem;line-height:1.1;text-transform:uppercase;margin-top:2px}
+.slate dd.red{color:#FF4B52}
+.slate .num{display:block;padding:16px 18px 20px;font-family:var(--cond);font-weight:800;font-size:2.4rem;letter-spacing:.02em;color:#fff}
+.slate .num:hover{color:var(--red)}
+.slate .num small{display:block;font-size:.78rem;letter-spacing:.2em;font-weight:600;color:var(--silver)}
+.reel{position:absolute;width:170px;height:170px;right:-34px;bottom:-62px;z-index:3;border-radius:50%;box-shadow:0 18px 40px rgba(0,0,0,.6);animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* TICKER */
+.tick{background:var(--cream);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;white-space:nowrap}
+.tick .track{display:inline-flex;gap:42px;padding:14px 0;animation:slide 36s linear infinite;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:1.15rem}
+.tick span::after{content:"\25CF";color:var(--red);margin-left:42px;font-size:.7rem;vertical-align:middle}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* SCENES */
+section.block{padding:100px 0}
+.sc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.sc-head h2{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4.2rem);line-height:.95;margin-top:10px}
+.sc-head p{max-width:380px;color:#3A3A3C}
+.scenes{display:grid;grid-template-columns:.8fr 1.2fr;border:2px solid var(--ink);background:var(--paper)}
+.tabs{border-right:2px solid var(--ink);display:flex;flex-direction:column}
+.tabs button{display:grid;grid-template-columns:62px 1fr;align-items:center;text-align:left;padding:22px 20px;border-bottom:1px solid var(--line);font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:1.25rem;line-height:1.15;letter-spacing:.03em;transition:.2s;position:relative}
+.tabs button:last-child{border-bottom:0}
+.tabs button i{font-style:normal;font-size:.82rem;letter-spacing:.16em;color:var(--red)}
+.tabs button:hover{background:var(--cream)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--cream)}
+.tabs button[aria-selected="true"] i{color:#FF4B52}
+.tabs button[aria-selected="true"]::after{content:"";position:absolute;right:-2px;top:0;bottom:0;width:6px;background:var(--red)}
+.scene{display:grid;grid-template-rows:auto 1fr}
+.scene[hidden]{display:none}
+.frame{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#2a2b2e,#111);overflow:hidden;border-bottom:2px solid var(--ink)}
+.frame::before{content:attr(data-n);position:absolute;left:24px;bottom:6px;font-family:var(--cond);font-weight:800;font-size:7rem;line-height:1;color:rgba(243,238,228,.12)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame .tag{position:absolute;left:0;top:0;background:var(--red);color:#fff;font-family:var(--cond);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.82rem;padding:6px 14px;z-index:2}
+.scene .txt{padding:28px 30px 32px}
+.scene h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:2rem;line-height:1}
+.scene p{margin-top:12px;color:#38383A;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips li{border:1.5px solid var(--ink);padding:5px 12px;font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.88rem}
+.scene .ask{margin-top:24px}
+
+/* WHY */
+.why{background:var(--ink);color:var(--cream)}
+.why .top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.why h2{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.6rem,6vw,5rem);line-height:.92}
+.why h2 em{font-style:normal;color:var(--red)}
+.why .top p{color:#D1CCC1}
+.strip{border-top:24px solid var(--ink);border-bottom:24px solid var(--ink);position:relative;background:var(--coal)}
+.strip::before,.strip::after{content:"";position:absolute;left:0;right:0;height:24px;background:var(--ink) var(--perf) repeat-x 0 0}
+.strip::before{top:-24px}
+.strip::after{bottom:-24px}
+.frames{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:10px 0}
+.fr{background:linear-gradient(160deg,#E4E6E9,#A9ADB4 60%,#CFD2D6);color:var(--ink);padding:22px 18px 24px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;border:2px solid #6c7077}
+.fr small{font-family:var(--cond);font-weight:700;letter-spacing:.18em;font-size:.78rem;color:#3d3f44}
+.fr b{display:block;font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:3.6rem;line-height:.9}
+.fr p{font-size:.95rem;line-height:1.4;margin-top:8px;color:#222}
+
+/* REVIEWS */
+.rev .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.rev h2{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.6rem,5.6vw,4.8rem);line-height:.92;margin-top:12px}
+.rev ul{margin-top:28px;display:grid;gap:10px}
+.rev ul li{display:flex;gap:12px;align-items:center;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem}
+.rev ul li::before{content:"";width:26px;height:26px;flex:none;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E") center/18px no-repeat}
+.quote{background:var(--paper);border:2px solid var(--ink);padding:44px 40px 36px;position:relative;box-shadow:12px 12px 0 var(--ink)}
+.quote::before{content:"\201C";position:absolute;top:-4px;left:22px;font-family:Georgia,serif;font-size:7rem;line-height:1;color:var(--red)}
+.quote p{font-size:1.18rem;margin-top:34px;color:#222}
+.quote footer{margin-top:24px;padding-top:16px;border-top:2px solid var(--ink);font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.quote footer span{color:var(--red)}
+
+/* BOOK */
+.book{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.book .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.book h2{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.8rem,6.2vw,5.4rem);line-height:.9}
+.book p.sub{margin-top:18px;max-width:480px;font-size:1.1rem}
+.book .big{display:block;margin-top:26px;font-family:var(--cond);font-weight:800;font-size:clamp(2.6rem,5.4vw,4.4rem);line-height:1;letter-spacing:.02em}
+.book .big:hover{color:var(--ink)}
+.book .mail{display:inline-block;margin-top:8px;font-weight:600;border-bottom:2px solid #fff}
+form{background:var(--ink);color:var(--cream);padding:34px 32px 30px;display:grid;gap:14px;border:2px solid #fff}
+form h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.7rem;letter-spacing:.04em}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-family:var(--cond);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:var(--silver);display:grid;gap:5px}
+input,select,textarea{font:inherit;font-size:1rem;padding:12px 13px;background:#fff;border:2px solid #fff;color:var(--ink);width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red)}
+textarea{min-height:92px;resize:vertical}
+form .btn{width:100%;border:0;cursor:pointer}
+.note{font-size:.84rem;color:var(--silver)}
+
+/* FOOTER */
+footer.site{background:var(--ink);color:#CFCABD;padding:70px 0 0}
+footer.site .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px}
+footer.site .plate{display:inline-block;background:var(--cream);padding:10px 14px}
+footer.site .plate img{height:70px;width:auto;mix-blend-mode:multiply}
+footer.site p.about{margin-top:18px;font-size:.96rem;max-width:300px}
+footer.site h4{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:.95rem;color:#fff;margin-bottom:16px}
+footer.site li{margin-bottom:9px;font-size:.96rem}
+footer.site a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.creds li{border:1.5px solid #5a5c60;padding:8px 12px;font-family:var(--cond);text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:#fff}
+.legal{margin-top:56px;border-top:1px solid #3a3b3e;padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.92rem}
+.legal a{color:#fff;font-weight:700;border-bottom:2px solid var(--red)}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.slate .arm,.reel,.tick .track{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:1020px){
+  nav.main{position:fixed;inset:122px 0 auto 0;background:var(--cream);border-bottom:2px solid var(--ink);padding:14px 20px;display:none}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:0}
+  nav.main a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+  .burger{display:flex}
+  header.top .call{display:none}
+  .hero .grid,.why .top,.rev .grid,.book .grid{grid-template-columns:1fr;gap:44px}
+  .hero .grid{padding:50px 0 80px}
+  .slate{margin:0 auto}
+  .scenes{grid-template-columns:1fr}
+  .tabs{border-right:0;border-bottom:2px solid var(--ink);flex-direction:row;overflow-x:auto}
+  .tabs button{flex:0 0 auto;min-width:220px;border-bottom:0;border-right:1px solid var(--line)}
+  .tabs button[aria-selected="true"]::after{right:0;left:0;top:auto;bottom:-2px;width:auto;height:6px}
+  .frames{grid-template-columns:1fr 1fr}
+  .fr:last-child{grid-column:1/-1}
+  footer.site .cols{grid-template-columns:1fr 1fr}
+  section.block{padding:70px 0}
+}
+@media (max-width:560px){
+  .bar .wrap{justify-content:center}
+  .bar .hide-s{display:none}
+  .f2{grid-template-columns:1fr}
+  .quote{padding:40px 22px 28px;box-shadow:7px 7px 0 var(--ink)}
+  .slate dd{font-size:1.3rem}
+  .reel{width:120px;height:120px;right:-12px;bottom:-48px}
+  footer.site .cols{grid-template-columns:1fr}
+  .frames{grid-template-columns:1fr}
+  .fr{min-height:180px}
+  .scene .txt{padding:22px 20px 26px}
+  .frame::before{font-size:5rem}
+  nav.main{inset:122px 0 auto 0}
+}
+</style>
+</head>
+<body>
+
+<div class="bar"><div class="wrap"><span><b>24/7</b> emergency restoration</span><span class="hide-s">Calgary, Alberta and surrounding areas</span><a href="tel:+14038912502"><b>(403) 891-2502</b></a></div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Reel Clean Ltd. home"><img src="assets/logo.png" alt="Reel Clean Ltd. logo" width="105" height="62"></a>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="https://reelcleantoday.com/">Gallery</a></li>
+        <li><a href="#reviews">Testimonials</a></li>
+        <li><a href="https://reelcleantoday.com/">Quality Assurance</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn red call" href="tel:+14038912502">Call now</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="perf" aria-hidden="true"></div>
+  <div class="wrap grid">
+    <div>
+      <div class="label">Calgary, Alberta &middot; Cleaning and restoration</div>
+      <h1>From film sets to <em>family homes.</em></h1>
+      <p class="lead">Reel Clean is Calgary's 24/7 specialty cleaning and restoration crew. Film production cleaning, house and commercial cleaning, restoration, carpet and floor care, all done right. IICRC certified, BBB accredited, and trusted by the Canadian film industry for 30 years.</p>
+      <div class="acts"><a class="btn red" href="#contact">Get Reel Clean today</a><a class="btn line" href="#services">See what we handle</a></div>
+    </div>
+    <div class="slate rv" aria-label="Reel Clean production slate">
+      <div class="arm" aria-hidden="true"></div>
+      <div class="body">
+        <div class="stripe" aria-hidden="true"></div>
+        <dl>
+          <div class="full"><dt>Production</dt><dd>Reel Clean Ltd.</dd></div>
+          <div><dt>Location</dt><dd>Calgary &amp; area</dd></div>
+          <div><dt>Roll</dt><dd>30 years</dd></div>
+          <div><dt>Scene</dt><dd>Clean + restore</dd></div>
+          <div><dt>Take</dt><dd class="red">On call 24/7</dd></div>
+        </dl>
+        <a class="num" href="tel:+14038912502"><small>Call the crew</small>(403) 891-2502</a>
+      </div>
+      <img class="reel" src="assets/reel.png" alt="" aria-hidden="true">
+    </div>
+  </div>
+  <div class="perf" aria-hidden="true"></div>
+</section>
+
+<div class="tick" aria-hidden="true"><div class="track">
+  <span>Trusted by the Canadian film industry for 30 years</span><span>IICRC certified</span><span>BBB accredited A+</span><span>Bonded and trained crews</span><span>24/7 emergency response</span>
+  <span>Trusted by the Canadian film industry for 30 years</span><span>IICRC certified</span><span>BBB accredited A+</span><span>Bonded and trained crews</span><span>24/7 emergency response</span>
+</div></div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="sc-head rv">
+      <div><div class="label">The call sheet</div><h2>Six scenes,<br>one crew.</h2></div>
+      <p>Pick the job and see exactly what is covered. Not sure where yours fits? Call and we will sort it out.</p>
+    </div>
+    <div class="scenes rv">
+      <div class="tabs" role="tablist" aria-label="Services" id="tabs">
+        <button role="tab" id="t1" aria-selected="true" aria-controls="s1" data-i="1"><i>SC 01</i>Film production cleaning</button>
+        <button role="tab" id="t2" aria-selected="false" aria-controls="s2" data-i="2"><i>SC 02</i>House and commercial cleaning</button>
+        <button role="tab" id="t3" aria-selected="false" aria-controls="s3" data-i="3"><i>SC 03</i>Water, fire, mold and asbestos</button>
+        <button role="tab" id="t4" aria-selected="false" aria-controls="s4" data-i="4"><i>SC 04</i>Pressure washing</button>
+        <button role="tab" id="t5" aria-selected="false" aria-controls="s5" data-i="5"><i>SC 05</i>Carpet, floors and upholstery</button>
+        <button role="tab" id="t6" aria-selected="false" aria-controls="s6" data-i="6"><i>SC 06</i>Odor removal and decontamination</button>
+      </div>
+      <div class="stage">
+        <article class="scene" id="s1" role="tabpanel" aria-labelledby="t1" data-name="Film production cleaning">
+          <figure class="frame" data-n="01"><span class="tag">Scene 01</span><img src="assets/scene-1.jpg" alt="Crew cleaning a film location at night" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>Film production cleaning</h3>
+            <p>Specialized cleaning for every kind of film industry client. We work around other crews and leave sets spotless without disturbing the dressing.</p>
+            <ul class="chips"><li>Film locations</li><li>Set decoration</li><li>Studios</li><li>Sound stages</li><li>Industrial</li><li>Star trailers and transport</li><li>Special effects</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+        <article class="scene" id="s2" role="tabpanel" aria-labelledby="t2" data-name="House and commercial cleaning" hidden>
+          <figure class="frame" data-n="02"><span class="tag">Scene 02</span><img src="assets/scene-2.jpg" alt="Bright, freshly cleaned home and office interior" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>House and commercial cleaning</h3>
+            <p>From a single home to a full commercial site. Our staff are bonded and regularly trained, so every cleaning job is covered the same way.</p>
+            <ul class="chips"><li>House cleaning</li><li>Move-in and move-out</li><li>Post-construction</li><li>Commercial and janitorial</li><li>Carpet and upholstery</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+        <article class="scene" id="s3" role="tabpanel" aria-labelledby="t3" data-name="Restoration (water, fire, mold, asbestos)" hidden>
+          <figure class="frame" data-n="03"><span class="tag">Scene 03</span><img src="assets/scene-3.jpg" alt="Restoration crew drying and repairing a water-damaged room" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>Water, fire, mold and asbestos</h3>
+            <p>When a home or business has been hit by water or fire, or needs smoke, mold or asbestos removal, we respond fast. Reel Clean is IICRC certified and provides 24/7 emergency restoration in Calgary.</p>
+            <ul class="chips"><li>Water damage</li><li>Fire damage</li><li>Smoke removal</li><li>Mold removal</li><li>Asbestos removal</li><li>24/7 emergency</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+        <article class="scene" id="s4" role="tabpanel" aria-labelledby="t4" data-name="Pressure washing" hidden>
+          <figure class="frame" data-n="04"><span class="tag">Scene 04</span><img src="assets/scene-4.jpg" alt="Hot pressure washing of a parkade wall" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>Pressure washing</h3>
+            <p>Interior and exterior hot pressure washing that blasts away scum, grime, mud and dirt. Indoor and outdoor jobs across Calgary.</p>
+            <ul class="chips"><li>Interior and exterior</li><li>Hot pressure washing</li><li>Alleys</li><li>Buildings</li><li>Vehicles and fleets</li><li>Parkades and underground</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+        <article class="scene" id="s5" role="tabpanel" aria-labelledby="t5" data-name="Carpet, floors and upholstery" hidden>
+          <figure class="frame" data-n="05"><span class="tag">Scene 05</span><img src="assets/scene-5.jpg" alt="Technician cleaning carpet beside a freshly finished floor" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>Carpet, floors and upholstery</h3>
+            <p>Carpet cleaning, floor finishing and floor restoration with state-of-the-art equipment. We strip, wax, repair, seal and clean every floor type.</p>
+            <ul class="chips"><li>Carpet cleaning</li><li>Upholstery</li><li>Floor finishing</li><li>Hardwood</li><li>Laminate</li><li>Ceramic</li><li>Marble</li><li>Concrete</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+        <article class="scene" id="s6" role="tabpanel" aria-labelledby="t6" data-name="Odor removal and decontamination" hidden>
+          <figure class="frame" data-n="06"><span class="tag">Scene 06</span><img src="assets/scene-6.jpg" alt="Technician in protective gear carrying out decontamination" loading="lazy" onerror="this.remove()"></figure>
+          <div class="txt"><h3>Odor removal and decontamination</h3>
+            <p>We are thorough about removing foul odors and their traces, and certified for decontamination work. Disinfecting and sanitizing is available with electrostatic fogging.</p>
+            <ul class="chips"><li>Odor removal</li><li>Decontamination</li><li>Bio-hazard cleanup</li><li>Hazardous contaminants</li><li>Crime scene and trauma</li><li>Disinfecting and sanitizing</li></ul>
+            <a class="btn dark ask" href="#contact" data-ask>Ask about this</a></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="top rv">
+      <h2>Why <em>Reel Clean?</em></h2>
+      <p>Thirty years in, we have built cleaning and restoration services for every kind of space, from film locations to Alberta homes and businesses. Our long-standing film clients speak for the work. Every customer gets the same thing: a professional crew that tackles any dirty job and leaves it impeccably clean.</p>
+    </div>
+    <div class="strip rv"><div class="frames">
+      <div class="fr"><small>01</small><div><b>30</b><p>years serving the Canadian film industry and Alberta customers</p></div></div>
+      <div class="fr"><small>02</small><div><b>24/7</b><p>emergency restoration across Calgary and surrounding areas</p></div></div>
+      <div class="fr"><small>03</small><div><b>IICRC</b><p>certified for restoration and decontamination work</p></div></div>
+      <div class="fr"><small>04</small><div><b>A+</b><p>BBB accredited business rating</p></div></div>
+      <div class="fr"><small>05</small><div><b>Bonded</b><p>and regularly trained staff you can trust in any space</p></div></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="block rev" id="reviews">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="label">Reel Clean reviews</div>
+      <h2>Spotless sets. Dressing left untouched.</h2>
+      <ul>
+        <li>Respectful of the sets</li>
+        <li>Thorough, even with other crews working</li>
+        <li>No job too big or too small</li>
+      </ul>
+    </div>
+    <figure class="quote rv">
+      <p>They did a fabulous job each time. They were respectful of the sets, thorough in their cleaning and completely understanding of being in a studio while other crews and jobs were being done. Their work on the sets was amazing. They left each set spotless yet dressing looked untouched. I would trust them to work in any situation or at any location. No job is too big or too small for them.</p>
+      <footer>Film production client <span>Calgary, AB</span></footer>
+    </figure>
+  </div>
+</section>
+
+<section class="block book" id="contact">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="label" style="color:#fff">Calgary and area</div>
+      <h2>Book Reel Clean today.</h2>
+      <p class="sub">100% guaranteed. We are the committed, reliable company you can trust, on set, at home or on site.</p>
+      <a class="big" href="tel:+14038912502">(403) 891-2502</a>
+      <a class="mail" href="mailto:info@reelcleantoday.com">info@reelcleantoday.com</a>
+    </div>
+    <form id="qf" class="rv" novalidate>
+      <h3>Request a quote</h3>
+      <div class="f2">
+        <label>Name*<input name="name" required autocomplete="name"></label>
+        <label>Phone*<input name="phone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <label>Email*<input name="email" type="email" required autocomplete="email"></label>
+      <label>Service<select name="service" id="svc">
+        <option>Film production cleaning</option><option>House and commercial cleaning</option><option>Restoration (water, fire, mold, asbestos)</option><option>Pressure washing</option><option>Carpet, floors and upholstery</option><option>Odor removal and decontamination</option><option>Not sure yet</option>
+      </select></label>
+      <label>Tell us about the job<textarea name="msg" placeholder="Location, size, timing"></textarea></label>
+      <button class="btn red" type="submit">Send request</button>
+      <p class="note" id="fnote">For emergencies, please call. We answer 24/7.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="plate" href="#top"><img src="assets/logo.png" alt="Reel Clean Ltd."></a>
+        <p class="about">24/7 specialty cleaning and restoration for Calgary, Alberta and surrounding areas. Trusted by the Canadian film industry for 30 years.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services" data-go="1">Film production cleaning</a></li>
+          <li><a href="#services" data-go="2">House and commercial</a></li>
+          <li><a href="#services" data-go="3">Restoration</a></li>
+          <li><a href="#services" data-go="4">Pressure washing</a></li>
+          <li><a href="#services" data-go="5">Carpet and floors</a></li>
+          <li><a href="#services" data-go="6">Odor and decontamination</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Calgary and area</li>
+          <li><a href="tel:+14038912502">(403) 891-2502</a></li>
+          <li><a href="mailto:info@reelcleantoday.com">info@reelcleantoday.com</a></li>
+          <li><a href="https://reelcleantoday.com/">reelcleantoday.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Credentials</h4>
+        <ul class="creds"><li>IICRC certified</li><li>BBB accredited, A+</li><li>Bonded staff</li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Reel Clean Ltd. All rights reserved.</span>
+      <span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+
+  var tabs=document.querySelectorAll('#tabs button');
+  function show(i){
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.i==i)});
+    document.querySelectorAll('.scene').forEach(function(s){s.hidden=s.id!=='s'+i});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.i)})});
+  document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(){show(a.dataset.go)})});
+
+  document.querySelectorAll('[data-ask]').forEach(function(a){a.addEventListener('click',function(){
+    var name=a.closest('.scene').dataset.name,sel=document.getElementById('svc');
+    for(var i=0;i<sel.options.length;i++){if(name.indexOf(sel.options[i].text.split(' (')[0])===0||sel.options[i].text.indexOf(name.split(' (')[0])===0){sel.selectedIndex=i}}
+  })});
+
+  document.getElementById('qf').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target,note=document.getElementById('fnote');
+    if(!f.name.value.trim()||!f.phone.value.trim()||!f.email.value.trim()){note.textContent='Please fill in name, phone and email.';note.style.color='#FF8A8F';return}
+    var body='Name: '+f.name.value+'\nPhone: '+f.phone.value+'\nEmail: '+f.email.value+'\nService: '+f.service.value+'\n\n'+f.msg.value;
+    location.href='mailto:info@reelcleantoday.com?subject='+encodeURIComponent('Quote request from '+f.name.value)+'&body='+encodeURIComponent(body);
+    note.textContent='Thanks. Your email app should open with the request ready to send.';note.style.color='';
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
