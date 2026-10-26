@@ -144,6 +144,10 @@ section.block{padding:100px 0}
 .fcreds img{height:52px;width:auto}
 @media (max-width:700px){.certs{flex-direction:column}.certs figure+figure{border-left:0;border-top:2px solid var(--ink)}.certs figure{width:100%;flex-direction:column;text-align:center;gap:10px}.certs figcaption{max-width:none}}
 
+.fr{position:relative}
+.fr .ico{position:absolute;top:0;right:0;width:64px;height:64px;background:var(--ink);color:var(--cream);display:grid;place-items:center;border-left:2px solid #6c7077;border-bottom:2px solid #6c7077}
+.fr .ico svg{width:36px;height:36px}
+.fr:hover .ico{background:var(--red)}
 /* REVIEWS */
 .rev .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
 .rev h2{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.6rem,5.6vw,4.8rem);line-height:.92;margin-top:12px}
@@ -353,11 +357,11 @@ footer.site a:hover{color:#fff;text-decoration:underline;text-underline-offset:4
       <p>Thirty years in, we have built cleaning and restoration services for every kind of space, from film locations to Alberta homes and businesses. Our long-standing film clients speak for the work. Every customer gets the same thing: a professional crew that tackles any dirty job and leaves it impeccably clean.</p>
     </div>
     <div class="strip rv"><div class="frames">
-      <div class="fr"><small>01</small><div><b>30</b><p>years serving the Canadian film industry and Alberta customers</p></div></div>
-      <div class="fr"><small>02</small><div><b>24/7</b><p>emergency restoration across Calgary and surrounding areas</p></div></div>
-      <div class="fr"><small>03</small><div><b>IICRC</b><p>certified for restoration and decontamination work</p></div></div>
-      <div class="fr"><small>04</small><div><b>A+</b><p>BBB accredited business rating</p></div></div>
-      <div class="fr"><small>05</small><div><b>Bonded</b><p>and regularly trained staff you can trust in any space</p></div></div>
+      <div class="fr"><small>01</small><span class="ico"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="9.5" r="2.2"/><circle cx="16" cy="22.5" r="2.2"/><circle cx="9.5" cy="16" r="2.2"/><circle cx="22.5" cy="16" r="2.2"/><circle cx="16" cy="16" r="1.2"/></svg></span><div><b>30</b><p>years serving the Canadian film industry and Alberta customers</p></div></div>
+      <div class="fr"><small>02</small><span class="ico"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="17" r="10"/><path d="M16 11v6l4 2.5M12 3.5h8"/></svg></span><div><b>24/7</b><p>emergency restoration across Calgary and surrounding areas</p></div></div>
+      <div class="fr"><small>03</small><span class="ico"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3.5l10 3.8v8.2c0 6-4.2 10.4-10 13-5.8-2.6-10-7-10-13V7.3z"/><path d="M11 16l3.8 3.8L21.5 12.5"/></svg></span><div><b>IICRC</b><p>certified for restoration and decontamination work</p></div></div>
+      <div class="fr"><small>04</small><span class="ico"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3.5l3.7 7.6 8.3 1.2-6 5.9 1.4 8.3L16 22.5l-7.4 4 1.4-8.3-6-5.9 8.3-1.2z"/></svg></span><div><b>A+</b><p>BBB accredited business rating</p></div></div>
+      <div class="fr"><small>05</small><span class="ico"><svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="14" width="20" height="14" rx="2"/><path d="M10.5 14V9.8a5.5 5.5 0 0 1 11 0V14"/><circle cx="16" cy="21" r="1.6"/></svg></span><div><b>Bonded</b><p>and regularly trained staff you can trust in any space</p></div></div>
     </div></div>
     <div class="certs rv">
       <figure><img src="assets/iicrc.png" alt="IICRC, Institute of Inspection Cleaning and Restoration Certification" width="224" height="81"><figcaption>Certified for restoration and decontamination</figcaption></figure>
